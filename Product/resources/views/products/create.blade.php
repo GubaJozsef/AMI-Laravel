@@ -10,7 +10,19 @@
     <form method="post" action="">
         <div>
             <label>Name</label>
-            <input type="name" name="name" placeholder="name"/>
+            <input type="text" name="name" placeholder="Name"/>
+        </div>
+        <div>
+            <label>Qty</label>
+            <input type="text" name="qty" placeholder="Qty"/>
+        </div>
+        <div>
+            <label>Price</label>
+            <input type="decimal" name="price" placeholder="Price"/>
+        </div>
+        <div>
+            <label>Description</label>
+            <input type="text" name="description" placeholder="Description"/>
         </div>
 
     </form>
