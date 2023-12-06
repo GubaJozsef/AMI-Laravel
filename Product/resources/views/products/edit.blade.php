@@ -12,6 +12,7 @@
         <ul>
             @foreach($errors->all() as $error)
             <li>{{$error}}</li>
+
             @endforeach
         </ul>
         @endif
@@ -21,19 +22,19 @@
     @method('put')
     <div>
         <label>Name</label>
-        <input type="text" name="name" placeholder="Name" value = "{{$product->name}}" />
+        <input type="text" name="name" placeholder="Name" value="{{$product->name}}"/>
     </div>
     <div>
         <label>Qty</label>
-        <input type="text" name="qty" placeholder="Qty" value = "{{$product->qty}}" />
+        <input type="text" name="qty" placeholder="Qty" value="{{$product->qty}}"/>
     </div> 
     <div>
         <label>Price</label>
-        <input type="text" name="price" placeholder="Price" value = "{{$product->price}}"/>
+        <input type="text" name="price" placeholder="Price" value="{{$product->price}}"/>
     </div>  
     <div>
         <label>Description</label>
-        <input type="text" name="description" placeholder="Description" value = "{{$product->description}}"/>
+        <input type="text" name="description" placeholder="Description" value="{{$product->description}}"/>
     </div>  
 
     <div>
