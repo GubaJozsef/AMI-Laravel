@@ -24,6 +24,9 @@
             <label>Description</label>
             <input type="text" name="description" placeholder="Description"/>
         </div>
+        <div>
+            <input type="submit" value="Save a New Product" />
+        </div>
 
     </form>
 </body>
