@@ -18,13 +18,12 @@ class ProductController extends Controller
     public function store(Request $request){
         $data = $request->validate([
             'name' => 'required', 
-            'qty' => 'required|numeric',
-            'price' => 'required|decimal:2',
+            'qty' => 'required|numeric', 
+            'price' => 'required|decimal:0,2', 
             'description' => 'nullable'
         ]);
 
         $newProduct = Product::create($data);
-
         return redirect(route('product.index'));
     }
 }
