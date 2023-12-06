@@ -20,7 +20,7 @@
         </div>
         <div>
             <label>Price</label>
-            <input type="decimal" name="price" placeholder="Price"/>
+            <input type="text" name="price" placeholder="Price"/>
         </div>
         <div>
             <label>Description</label>
