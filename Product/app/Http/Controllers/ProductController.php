@@ -15,6 +15,10 @@ class ProductController extends Controller
     }
 
     public function store(Request $request){
-        dd($request->name);
+        $data = $request->validate([
+            'name' => 'required', 
+            'qty' => 'required|numeric',
+            'price' => 'required|decimal,2',
+        ]);
     }
 }
